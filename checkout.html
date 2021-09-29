@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout International | Nordstorm</title>
+    <style>
+        #container {
+            max-width: 1200px;
+            border: 1px solid black;
+            margin:auto;
+            display:flex;
+        }
+       #box1{
+           flex-basis: 68%;
+          
+        margin-left: 1%;
+       }
+      
+    .email,.address{
+        width: 98%;
+    }
+    .firstname,.lastname,.address2,.PostalCode,.city,.region,.phone{
+        width: 47.75%;
+
+    }
+    #india{
+        width: 47.75%;
+    }
+    table{
+        background: #FFFFFF
+    }
+    .continue{
+        background: #000;
+        color: #FFFFFF;                                                                     
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-left: 30%;
+        margin-top: 1%;
+    }
+    #box2{
+        
+           flex-basis: 28%;
+           margin-left: 2%;
+           background:#F4F4F4;
+       }
+     .continue2{
+        background: #000;
+        color: #FFFFFF;
+        width: 100%;
+     }  
+     .total_amount{
+         display: flex;
+         justify-content: space-between;
+     }
+     .promo{
+         border-bottom: 1px solid  #000;
+         border-top: 1px solid black;
+         color:#82C3DD ;
+     }
+     th{
+     border: 1px solid black;
+     }
+     .shopping_bag{
+         height:25px;
+         float:right;
+         margin-top: 1%;
+     }
+     .nordStorm{
+display: inline-block;
+     }
+     nav{
+         border : 1px solid black;
+     }
+      
+          
+      
+      table{
+          width : 100%;
+      }
+      #payment2{
+          margin :1%;
+        
+      }
+
+      .num2{
+          float: left;
+          border : 2px solid black;
+          margin-right: 1%;
+          border-radius: 50%;
+          
+      }
+      .payment_name{
+float : left;
+border-top: 1px solid black;
+
+      }
+    </style>
+</head>
+<body>
+    <nav>
+        <h3 class = "nordStorm" >NordStorm</h3>
+      
+            <img src="https://cdn-icons-png.flaticon.com/512/253/253298.png" alt="" class="shopping_bag">
+     
+    </nav>
+   <div id="container">
+    
+          
+           <div id="box1">
+               <div class="checkout">
+                <i class="fas fa-lock"></i>
+                <h3>Secure checkout <sub>powered by Borderfree</sub> </h3>
+                <p class="descrip">Already have a Borderfree account? Click here. ?</p>
+
+               </div>
+               <div class="form">
+                   <span>1</span>
+                 <span>Delivery</span>
+                 <form >
+                     <input type="email" placeholder ="Email" class="email"></br>
+                     <input type="text" placeholder ="First Name" class="firstname" >
+                     <input type="text" placeholder ="Last Name" class="lastname"></br>
+                     <input type="text " placeholder ="Address" class="address"></br>
+                     <input type="text" placeholder ="address2(Optional)" class="address2">
+                     <input type="text" placeholder =" PostalCode" class="PostalCode"></br>
+                     <input type="text" placeholder ="City" class="city" >
+                     <input type="text" placeholder ="Region" class="region"></br>
+                     <input type="number" placeholder ="Phone" class="phone" >
+                    <span class= "country_select">
+                        <select name="location" id="india">
+                            <option value="india" >India</option>
+                            <option value="Usa" >USA</option>
+                            <option value="United_Kindom" >United_Kindom</option>
+                            <option value="Russia" >Russia</option>
+                            <option value="Germany" >Germany</option>
+                            <option value="Scotland" >Scotland</option>
+                        </select>
+                    </span>
+                    </form>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Delivery Method</th>
+                                    <th>Estimated Arrival</th>
+                                    <th>Shipping Cost</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>	
+                                        Standard </br>
+                                        No additional import charges at delivery</td>
+                                     <td>11–21 business days</td>
+                                     <td>(INR) ₹2,469</td>
+                                       
+                                </tr>
+                                <tr>
+                                   <td>Standard</br>
+                                    Import charges collected upon deliver</td>
+                                   <td>11–21 business days</td>
+                                   <td>(INR) ₹2,469</td>
+                                </tr>
+                                <tr>
+                                    <td>Express</br>
+                                        No additional import charges at delivery</td>
+                                   <td>11–16 business days</td>
+                                   <td>(INR) ₹2,734</td>
+                                </tr>
+                                <tr>
+                                    <td>Express</br>
+                                        Import charges collected upon delivery</td>
+                                    <td>11–16 business days</td>
+                                    <td>(INR) ₹2,734</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class = "continue">Continue</button>
+                    </div>
+
+                  
+               </div>
+               <p class="num2">2</p>
+               <p class="payment_name">Payment</p><br>
+               <div id="payment2">
+              
+           <p>By placing your order, you agree to the Terms & Conditions and Privacy Policy of Borderfree from Pitney Bowes, Nordstrom’s international fulfillment service. Borderfree is an online merchant that is located at 27 Waterview Drive, Shelton, CT, 06484, US.</p>
+                </div>
+   
+
+
+
+           </div>
+
+       
+
+
+           <div id="box2">
+               <span class = "cart_icon"></span>
+               <h4>Your Order</h4>
+               <button class = "continue2">Continue</button>
+               <div class="total_amount">
+               <div class="items">
+                   <p class="p_items">Items</p>
+                   <p class="p_items">shipping</p>
+                   <p class="p_items">Duties & Taxes</p>
+                   <p class="p_Total">Total</p>
+               </div>
+               <div class="price">
+                  <p class="p_price">₹1,070</p>
+                  <p class="p_price">₹2,476</p>
+                  <p class="p_price">₹1,492</p>
+                  <p class="p_price">(INR)₹5,038</p>
+               </div>
+            </div>
+               <p class="promo">-Promo Code</p>
+           </div>
+    </div>
+</body>
+</html>

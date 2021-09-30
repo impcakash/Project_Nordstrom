@@ -96,6 +96,14 @@ float : left;
 border-top: 1px solid black;
 
       }
+      .div_cart{
+        
+        border: 1px solid black;
+      }
+      .product_img{
+  width: 40%;
+  
+      }
     </style>
 </head>
 <body>
@@ -188,15 +196,7 @@ border-top: 1px solid black;
               
            <p>By placing your order, you agree to the Terms & Conditions and Privacy Policy of Borderfree from Pitney Bowes, Nordstrom’s international fulfillment service. Borderfree is an online merchant that is located at 27 Waterview Drive, Shelton, CT, 06484, US.</p>
                 </div>
-   
-
-
-
            </div>
-
-       
-
-
            <div id="box2">
                <span class = "cart_icon"></span>
                <h4>Your Order</h4>
@@ -209,14 +209,20 @@ border-top: 1px solid black;
                    <p class="p_Total">Total</p>
                </div>
                <div class="price">
-                  <p class="p_price">₹1,070</p>
-                  <p class="p_price">₹2,476</p>
-                  <p class="p_price">₹1,492</p>
-                  <p class="p_price">(INR)₹5,038</p>
+                  <p id="p_items"></p>
+                  <p id="p_shipping"></p>
+                  <p id="p_taxes"></p>
+                  <p id="p_total"></p>
                </div>
             </div>
-               <p class="promo">-Promo Code</p>
+
+               <form action="" onsubmit="promo_code(event)">
+                 <input type="text" id="promo" placeholder="promo code">
+                 <input type="submit">
+               </form>
+               <div id="cart"></div>
            </div>
+         
     </div>
 </body>
 </html>
@@ -365,12 +371,73 @@ border-top: 1px solid black;
     },
 ];
 
-    var cart = JSON.parse(localStorage.getItem("cart"));
-    // console.log(cart)
+    var product_cart  = JSON.parse(localStorage.getItem("cart"));
+    // console.log(product_cart)
+    var total_product = product_cart.length
+    // console.log(total_product)
+    var sum = 0
+    for(var i=0;i<product_cart.length;i++) {
+        sum += +product_cart[i].price
+    }
+    var items = document.getElementById("p_items")
+    items.textContent = total_product
+    let shipping = document.getElementById("p_shipping")
+    var shipping_cost = 1500
+    shipping.textContent = '₹'+ shipping_cost
+    let total_tax = sum *18/100
+    // console.log(total_tax)
+    var taxes = document.getElementById("p_taxes")
+    taxes.textContent =  '₹' + total_tax
+    let total_p_amount = shipping_cost +total_tax+sum
+    // console.log(total_p_amount)
+    var total_amount = document.getElementById("p_total")
+    total_amount.textContent = "(INR)₹" + total_p_amount
+     
+let promo = document.getElementById("promo")
+function promo_code(e){
+  event.preventDefault()
+  // console.log(promo.value);
+  let count = 0
+  if(promo.value === "NodeStorm30"){
+    count ++
+    let discount = Math.floor(total_p_amount*30/100)
+    console.log(discount)
+    // console.log(discount)
+    // console.log(total_p_amount)
+    total_amount.textContent = "(INR)₹" + (total_p_amount - discount);
+    setTimeout(function(){
+ 	alert("Coupon apply  successfully"); 
+}, 1000);//wait 2 seconds
+
+
+  }else{
+    alert("Invalid Coupon")
+  }
+}
+
     function ShowProducts(){
 var cart = document.getElementById("cart")
+let div_cart = document.createElement("div");
+div_cart.setAttribute("class", "div_cart")
+var div_description = document.createElement("div");
+
+
+cart.append(div_cart)
 // console.log(cart)
+product_cart.forEach(function(product){
+// console.log(product
+let name = document.createElement("p");
+name.textContent = product.name;
+// console.log(name);
+let price = document.createElement("p");
+price.textContent = product.price
+let img = document.createElement("img");
+img.setAttribute("class","product_img")
+img.src = product.img
+div_cart.append(img,name,price)
 
-
+})
     }
 ShowProducts()
+
+</script>

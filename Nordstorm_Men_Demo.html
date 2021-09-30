@@ -226,34 +226,34 @@
 
             <div id="middle_box_left">
                 <hr>
-                <div>
-                    <div class="middle_box_left_text">Brand</div>
+                <div onclick="sorting_by_sizeLH()">
+                    <div class="middle_box_left_text" >Size Low to High</div>
                     <div class="middle_box_left_symbol">+</div>
                 </div>
                 <hr>
-                <div>
-                    <div class="middle_box_left_text">Color</div>
+                <div onclick="sorting_by_sizeHL()">
+                    <div class="middle_box_left_text">Size High to Low</div>
                     <div class="middle_box_left_symbol">+</div>
                 </div>
                 <hr>
-                <div>
-                    <div class="middle_box_left_text">Feature</div>
-                    <div class="middle_box_left_symbol">+</div>
+                <div onclick = "sorting_by_ratingLH()">
+                    <div class="middle_box_left_text">Rating Low to High</div>
+                   
                 </div>
                 <hr>
-                <div>
-                    <div class="middle_box_left_text">Gender</div>
-                    <div class="middle_box_left_symbol">+</div>
+                <div onclick = "sorting_by_ratingHL()">
+                    <div class="middle_box_left_text">Rating High to Low</div>
+                    
                 </div>
                 <hr>
-                <div>
-                    <div class="middle_box_left_text">Material</div>
-                    <div class="middle_box_left_symbol">+</div>
+                <div onclick = "sorting_by_priceLH()">
+                    <div class="middle_box_left_text">Price Low to High</div>
+
                 </div>
                 <hr>
-                <div>
-                    <div class="middle_box_left_text">Price</div>
-                    <div class="middle_box_left_symbol">+</div>
+                <div onclick = "sorting_by_priceHL()">
+                    <div class="middle_box_left_text">Price High to Low</div>
+
                 </div>
                 <hr>
                 <div>
@@ -570,8 +570,9 @@ let data = [
 
 let parent = document.getElementById('products');
 
-function showProducts() {
-        data.forEach(function (product){
+function showProducts(d) {
+    parent.innerHTML = null;
+        d.forEach(function (product){
 
           let div = document.createElement("div");
       
@@ -609,7 +610,7 @@ function showProducts() {
 
     }
 
-    showProducts();
+    showProducts(data);
 
 
     if (localStorage.getItem("cart") === null) {
@@ -626,5 +627,40 @@ function showProducts() {
         console.log("products_cart:", products_cart);
 
     }
-
+  function sorting_by_sizeLH(){
+      let arr = data.sort(function(a,b){
+          return a.size - b.size;
+      })
+      showProducts(arr);
+  }
+  function sorting_by_priceLH(){
+      let arr = data.sort(function(a,b){
+          return a.price - b.price;
+      })
+      showProducts(arr);
+  }
+  function sorting_by_ratingLH(){
+      let arr = data.sort(function(a,b){
+          return a.rating - b.rating;
+      })
+      showProducts(arr);
+  }
+  function sorting_by_sizeHL(){
+      let arr = data.sort(function(a,b){
+          return b.size - a.size;
+      })
+      showProducts(arr);
+  }
+  function sorting_by_priceHL(){
+      let arr = data.sort(function(a,b){
+          return b.price - a.price;
+      })
+      showProducts(arr);
+  }
+  function sorting_by_ratingHL(){
+      let arr = data.sort(function(a,b){
+          return b.rating - a.rating;
+      })
+      showProducts(arr);
+  }
 </script>

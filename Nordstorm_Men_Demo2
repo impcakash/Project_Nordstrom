@@ -6,23 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Men</title>
     <style>
+        #body {
+            width: 100%;
+            font-family: "Brandon Text", Arial, sans-serif;
+            border: 2px solid teal;
+        }
         #top_box1 {
             width: 100%;
             background-color: black;
             height: 40px;
         }
         .text_size {
+            display: inline-block;
+            width: 95%;
             text-align: center;
             color: white;
-            font-size: 16px;
-            padding-top: 10px;
+            font-family: "Brandon Text", Arial, sans-serif;
+            font-size: 14px;
+            padding-top: 13px;
         }
-        /* .india {
-            font-size: 15px;
-            text-align: right;
-            color: white;
+        .top_box_ind {
             display: inline-block;
-        } */
+            width: 4%;
+            background-color: black;
+            color: white;
+            font-family: "Brandon Text", Arial, sans-serif;
+            font-size: 14px;
+            padding-top: 13px;
+        }
+        .top_box_ind_text {
+            text-align: right;
+            display: inline-block;
+        }
+        .top_box_ind_flag {
+            display: inline-block;
+        }
         #top_box2 {
             width: 100%;
             height: 120px;
@@ -43,6 +61,7 @@
             width: 16%;
             height: 800px;
             vertical-align: top;
+            color: #393939;
             border: 2px solid yellow;
         }
         #middle_box_left > hr {
@@ -57,7 +76,8 @@
         }
         .middle_box_left_text {
             width: 77%;
-            font-size: 13px;
+            font-family: "Brandon Text", Arial, sans-serif;
+            font-size: 12px;
             font-weight: 700;
             padding-top: 5%;
             text-align: left;
@@ -72,12 +92,14 @@
         }
         #middle_box_right {
             display: inline-block;
+            color: #393939;
             width: 80%;
             height: 3270px;
             vertical-align: top;
             border: 2px solid orange;
         }
         #middle_box_right_top {
+            color: #393939;
             width: 100%;
             height: 120px;
             border: 2px solid violet;
@@ -87,13 +109,6 @@
             height: 3130px;
             border: 2px solid red;
         }
-        /* #middle_box_right_buttom > div {
-            padding: 1%;
-            display: grid;
-            grid-template-columns: 24% 24% 24% 24%;
-            grid-template-rows: 600px 600px 600px 600px 600px;
-            gap: 1%;
-        } */
         #products {
             padding-left: 2%;
             display: grid;
@@ -104,10 +119,25 @@
         img {
             width: 100%;
         }
+        #products > div {
+            font-family: "Brandon Text", Arial, sans-serif;
+            color: #393939;
+            font-size: 15px;
+        }
+        #products > div > p:nth-child(3) {
+            font-weight: 700;
+        }
+        #products > div > p:nth-child(4) {
+            font-size: 12px;
+        }
+        #products > div > div {
+            color: white;
+        }
         #middle_box_right_bottom > div > div {
             border: 2px solid #63fc3d;
         }
         .middle_box_right_top_head {
+            font-family: "Brandon Text", Arial, sans-serif;
             padding-left: 2%;
             padding-top: 1%;
             width: 65%;
@@ -115,6 +145,9 @@
             display: inline-block;
             vertical-align: top;
             border: 1px solid black;
+        }
+        .middle_box_right_top_head > p {
+            font-size: 13px;
         }
         .middle_box_right_top_bottom {
             width: 25%;
@@ -124,7 +157,9 @@
             border: 1px solid cyan;
         }
         #middle_box_bottom {
-            margin-left: 22%;
+            color: #393939;
+            margin-top: 2%;
+            margin-left: 15%;
             width: 70%;
             height: 50px;
             border: 2px solid green;
@@ -133,37 +168,54 @@
             text-align: center;
             padding-top: 1%;
         }
-        #bottom_box {
+        #bottom_box_main {
+            border: 2px solid teal;
+            width: 100%;
             background-color: #f9f9f9;
-            padding-left: 2%;
+        }
+        #bottom_box {
+            padding-left: 1%;
             padding-top: 2%;
-            width: 98%;
-            height: 420px;
+            width: 99%;
+            height: 440px;
+            font-family: "Brandon Text", Arial, sans-serif;
             border: 2px solid blue;
             display: grid;
-            gap: 3%;
-            grid-template-columns: 16% 17% 17% 16% 16%;
+            gap: 2%;
+            grid-template-columns: 13% 13% 13% 13% 13% 20%;
             grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
         }
         #bottom_box > div {
+            color: #393939;
+            font-family: "Brandon Text", Arial, sans-serif;
+            font-size: 12px;
             border: 1px solid fuchsia;
+        }
+        #bottom_box_head {
+            font-weight: 700;
         }
         .button_add_to_cart {
             padding-left: 70%;
             padding-top: 5%;
         }
+        .bottom_box_ind_text {
+            display: inline-block;
+        }
+        .bottom_box_ind_flag {
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
-    <div>
+    <div id="body">
 
         <div id="top_box1">
             <div class="text_size">
                 <strong>Shipping outside of the U.S. or Canada?</strong>&nbsp<u>Learn About International Shipping</u>
+                
             </div>
-            <!-- <div class=".india">
-                India
-            </div> -->
+            <div class="top_box_ind"><div class="top_box_ind_flag"><img src="https://n.nordstrommedia.com/alias/IN.gif" alt=""></div>&nbsp&nbsp<div class="top_box_ind_text">India</div></div>
+            
         </div>
 
         <div id="top_box2">
@@ -245,47 +297,6 @@
 
                 <div id="middle_box_right_bottom">
                     <div id="products"></div>
-                        <!-- <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div> -->
-                    </div>
                 </div>
 
                 <div id="middle_box_bottom">
@@ -296,69 +307,95 @@
 
         </div>
 
-        <diV id="bottom_box">
-            <div><strong>Customer Service</strong></div>
-            <div><strong>About Us</strong></div>
-            <div><strong>Stores & Services</strong></div>
-            <div><strong>Nordstrom Card & Rewards</strong></div>
-            <div><strong>Nordstrom, Inc.</strong></div>
+        <div id="bottom_box_main">
+            <diV id="bottom_box">
+                <div id="bottom_box_head">Customer Service</div>
+                <div id="bottom_box_head">About Us</div>
+                <div id="bottom_box_head">Stores & Services</div>
+                <div id="bottom_box_head">Nordstrom Card & Rewards</div>
+                <div id="bottom_box_head">Nordstrom, Inc.</div>
+                <div>Get our apps</div>
+    
+                <div>Contact Us</div>
+                <div>Careers</div>
+                <div>Find a Store </div>
+                <div>The Nordy Club Rewards</div>
+                <div>Nordstrom Rack</div>
+                <div></div>
+    
+                <div>Order Status</div>
+                <div>Corporate Social Responsibility</div>
+                <div>Free Style Help</div>
+                <div>Pay My Bill</div>
+                <div>Nordstrom Canada</div>
+                <div></div>
+    
+                <div>Shipping</div>
+                <div>Diversity, Inclusion & Belonging</div>
+                <div>Alterations & Tailoring</div>
+                <div>Manage My Nordstrom Card</div>
+                <div>Trunk Club</div>
+                <div></div>
 
-            <div>Contact Us</div>
-            <div>Careers</div>
-            <div>Find a Store </div>
-            <div>The Nordy Club Rewards</div>
-            <div>Nordstrom Rack</div>
+                <div>Return Policy & Exchanges</div>
+                <div>Investor Relations</div>
+                <div>Trunk Club</div>
+                <div></div>
+                <div></div>
+                <div></div>
 
-            <div>Order Status</div>
-            <div>Corporate Social Responsibility</div>
-            <div>Free Style Help</div>
-            <div>Pay My Bill</div>
-            <div>Nordstrom Canada</div>
+                <div>Price Adjustments</div>
+                <div>Press Releases</div>
+                <div>Pop-In Shop</div>
+                <div></div>
+                <div></div>
+                <div></div>
 
-            <div>Shipping</div>
-            <div>Diversity, Inclusion & Belonging</div>
-            <div>Alterations & Tailoring</div>
-            <div>Manage My Nordstrom Card</div>
-            <div>Trunk Club</div>
+                <div>Gift Cards</div>
+                <div>Get Email Updates</div>
+                <div>Virtual Events</div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+                <div>FAQ</div>
+                <div>Nordstrom Blog</div>
+                <div>Spa Nordstrom</div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+                <div>Product Recalls</div>
+                <div></div>
+                <div>Nordstrom Restaurants</div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+                <div><div class="bottom_box_ind_flag"><img src="https://n.nordstrommedia.com/alias/IN.gif" alt=""></div>&nbsp&nbsp<div class="bottom_box_ind_text">India</div></div>
+                <div></div>
+                <div>Nordstrom Local</div>
+                <div></div>
+                <div></div>
+                <div></div>
+    
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                
+                <div>Your Privacy Rights</div>
+                <div>Do Not Sell My Info</div>
+                <div>Terms & Conditions</div>
+                <div>Interest-Based Ads</div>
+                <div>©2021 Nordstrom, Inc.</div>
+                <div></div>
+                
+            </diV>
             
-            <div>Return Policy & Exchanges</div>
-            <div>Investor Relations</div>
-            <div>Trunk Club</div>
-            <div></div>
-            <div></div>
-
-            <div>Price Adjustments</div>
-            <div>Press Releases</div>
-            <div>Pop-In Shop</div>
-            <div></div>
-            <div></div>
-
-            <div>Gift Cards</div>
-            <div>Get Email Updates</div>
-            <div>Virtual Events</div>
-            <div></div>
-            <div></div>
-
-            <div>FAQ</div>
-            <div>Nordstrom Blog</div>
-            <div>Spa Nordstrom</div>
-            <div></div>
-            <div></div>
-
-            <div>Product Recalls</div>
-            <div></div>
-            <div>Nordstrom Restaurants</div>
-            <div></div>
-            <div></div>
-
-            <div>India</div>
-            <div></div>
-            <div>Nordstrom Local</div>
-            <div></div>
-            <div></div>
-            
-        </diV>
-        
+        </div>        
 
     </div>
     
@@ -369,45 +406,51 @@
 
 let data = [
     {
-      name: "Nordstrom Tech-Smart Trim Fit Sport Coat",
+      name: "Nordstrom Tech-Smart Trim Fit Coat",
       rating: "4.8",
       currency: "INR",
-      price: "45700",
+      price: "5500",
+      size: "40",
       img: "https://n.io.nordstrommedia.com/id/sr3/dc00121d-48a1-40ea-9367-a892602103fa.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "Peter Millar Plaid Wool Sport Coat",
       rating: "4.6",
       currency: "INR",
-      price: "33300",
+      price: "4800",
+      size: "41",
       img: "https://n.io.nordstrommedia.com/id/sr3/6815f686-069e-48c5-9176-43a3b7184996.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "River Island Relaxed Blazer",
       rating: "3.9",
       currency: "INR",
-      price: "31100",
+      price: "5300",
+      size: "42",
       img: "https://n.io.nordstrommedia.com/id/sr3/443375e4-e436-4343-ad9c-d5321feca76c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
-      name: "Liverpool Herringbone Travel Sport Coat",
+      name: "Liverpool Herringbone Sport Coat",
       rating: "4.4",
       currency: "INR",
-      price: "36200",
+      price: "4600",
+      size: "44",
       img: "https://n.io.nordstrommedia.com/id/sr3/6d326a04-af61-4a58-af20-3b050d2fdcaf.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "Levi's Skate Hunters Jacket",
       rating: "4.8",
       currency: "INR",
-      price: "48100",
+      price: "4800",
+      size: "39",
       img: "https://n.io.nordstrommedia.com/id/sr3/d0aca8b6-98af-4e53-8f69-0a7fc3637a37.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "Suitsupply Wool Sport Coat",
       rating: "3.7",
       currency: "INR",
-      price: "34400",
+      price: "3400",
+      size: "38",
       img: "https://n.io.nordstrommedia.com/id/sr3/6e323c3c-d49d-45c5-ad5a-14bf98aeadc8.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     
@@ -415,107 +458,118 @@ let data = [
       name: "BOSS Haylon Classic Fit Sport Coat",
       rating: "3.6",
       currency: "INR",
-      price: "31800",
+      price: "4900",
+      size: "40",
       img: "https://n.io.nordstrommedia.com/id/sr3/3abc2852-d12e-42d9-b931-3f4ae37202ba.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "Eleventy Slim Fit Jersey Sport Coat",
       rating: "3.8",
       currency: "INR",
-      price: "32700",
+      price: "3700",
+      size: "41",
       img: "https://n.io.nordstrommedia.com/id/sr3/1f8b07b9-46ff-42d7-b6b9-0b1c73ec0a82.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "Nordstrom Trim Fit Sport Coat",
       rating: "4.5",
       currency: "INR",
-      price: "47600",
+      price: "4750",
+      size: "45",
       img: "https://n.io.nordstrommedia.com/id/sr3/c085b6a4-bd7a-4775-8fc9-d3372014fe48.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "BOSS Hartlay Plaid Wool Sport Coat",
       rating: "3.3",
       currency: "INR",
-      price: "33500",
+      price: "5100",
+      size: "46",
       img: "https://n.io.nordstrommedia.com/id/sr3/5c1cf802-361a-411c-85fe-d47a8e15990a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "Bugatchi Men's Stripe Sport Coat",
       rating: "4.2",
       currency: "INR",
-      price: "33800",
+      price: "5400",
+      size: "47",
       img: "https://n.io.nordstrommedia.com/id/sr3/b0f95d4d-02f7-40a8-8bc7-8ea585184248.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "River Island Slim Fit Suit Jacket",
       rating: "3.2",
       currency: "INR",
-      price: "32200",
+      price: "3200",
+      size: "38",
       img: "https://n.io.nordstrommedia.com/id/sr3/467b6b32-5741-4afd-97f5-c6e56c6b0f7f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "Brunello Cucinelli Denim Jacket",
       rating: "3.4",
       currency: "INR",
-      price: "24800",
+      price: "3850",
+      size: "39",
       img: "https://n.io.nordstrommedia.com/id/sr3/bd67e595-15a7-4f9d-b08c-b81a9439a55e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "Levi's Half-All Trucker Jacket",
       rating: "4.6",
       currency: "INR",
-      price: "47700",
+      price: "4550",
+      size: "40",
       img: "https://n.io.nordstrommedia.com/id/sr3/3a343c3a-726f-45f8-a70c-d3f3799ee346.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "Dart Denim Jacket",
       rating: "4.1",
       currency: "INR",
-      price: "35000",
+      price: "3150",
+      size: "41",
       img: "https://n.io.nordstrommedia.com/id/sr3/98dc97d0-d8b3-4eeb-9f22-6703507c0d01.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "Luke Mother Trucker Denim Jacket",
       rating: "4.7",
       currency: "INR",
-      price: "35100",
+      price: "3500",
+      size: "42",
       img: "https://n.io.nordstrommedia.com/id/sr3/6fc2fcdc-ded6-446b-b408-8f62dc4d8d7f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "Peter Millar Flynn Classic Fit Check Wool Sport Coat",
       rating: "4.2",
       currency: "INR",
-      price: "34700",
+      price: "3650",
+      size: "43",
       img: "https://n.io.nordstrommedia.com/id/sr3/de1c5104-a1f9-4bfd-b761-e5d4a24fcf96.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "Rodd & Gunn Portland Spray Classic Fit Windowpane Wool Blend Sport Coat",
       rating: "3.8",
       currency: "INR",
-      price: "32700",
+      price: "3200",
+      size: "44",
       img: "https://n.io.nordstrommedia.com/id/sr3/418eade1-dac4-4ba2-8ddc-b98216ddf2e0.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "Jack Victor Midland Windowpane Wool Sport Coat",
       rating: "4.6",
       currency: "INR",
-      price: "36500",
+      price: "3600",
+      size: "45",
       img: "https://n.io.nordstrommedia.com/id/sr3/34de2d63-3c2a-44ae-984c-3f73dc35a891.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
     {
       name: "BOSS Huge Slim Fit Microcheck Wool Blazer",
       rating: "4.8",
       currency: "INR",
-      price: "41500",
+      price: "4500",
+      size: "46",
       img: "https://n.io.nordstrommedia.com/id/sr3/fd7ad883-3262-4c6e-9f83-fd64f6c46573.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
     },
 ];
 
 let parent = document.getElementById('products');
 
-if (localStorage.getItem("cart") === null) {
-        localStorage.setItem("cart", JSON.stringify([]));
-    }
 function showProducts() {
         data.forEach(function (product){
 
@@ -534,6 +588,12 @@ function showProducts() {
           let product_name = document.createElement("p");
           product_name.textContent = product.name;
 
+          let product_rating = document.createElement("p");
+          product_rating.textContent = "Rating " +product.rating;
+
+          let product_space = document.createElement("div");
+          product_space.textContent = ".";
+
           let addtocart_btn = document.createElement("button");
 
           addtocart_btn.innerText = "Add to Cart";
@@ -542,7 +602,7 @@ function showProducts() {
               addtoCart(product);
           };
 
-          div.append(img, product_name, product_price, addtocart_btn);
+          div.append(img, product_name, product_price, product_rating, product_space, addtocart_btn);
 
           parent.append(div);
         });
@@ -552,6 +612,9 @@ function showProducts() {
     showProducts();
 
 
+    if (localStorage.getItem("cart") === null) {
+        localStorage.setItem("cart", JSON.stringify([]));
+    }
 
     function addtoCart(p) {
         let products_cart = JSON.parse(localStorage.getItem("cart"));

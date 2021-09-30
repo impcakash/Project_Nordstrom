@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men</title>
+    <style>
+        #top_box1 {
+            width: 100%;
+            background-color: black;
+            height: 40px;
+        }
+        .text_size {
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            padding-top: 10px;
+        }
+        /* .india {
+            font-size: 15px;
+            text-align: right;
+            color: white;
+            display: inline-block;
+        } */
+        #top_box2 {
+            width: 100%;
+            height: 120px;
+            border: 2px solid green;
+        }
+        .left_top_box2 {
+            width: 20%;
+            border: 1px solid red;
+        }
+        #middle_box {
+            display: inline-block;
+            width: 100%;
+            height: 3340px;
+            border: 2px solid purple;
+        }
+        #middle_box_left {
+            display: inline-block;
+            width: 16%;
+            height: 800px;
+            vertical-align: top;
+            border: 2px solid yellow;
+        }
+        #middle_box_left > hr {
+            width: 79%;
+            height: 1px solid black;
+        }
+        #middle_box_left > div {
+            width: 80%;
+            height: 5%;
+            margin-left: 10%;
+            border: 1px solid blue;
+        }
+        .middle_box_left_text {
+            width: 77%;
+            font-size: 13px;
+            font-weight: 700;
+            padding-top: 5%;
+            text-align: left;
+            display: inline-block;
+        }
+        .middle_box_left_symbol {
+            width: 20%;
+            font-size: 15px;
+            padding-top: 5%;
+            text-align: right;
+            display: inline-block;
+        }
+        #middle_box_right {
+            display: inline-block;
+            width: 80%;
+            height: 3270px;
+            vertical-align: top;
+            border: 2px solid orange;
+        }
+        #middle_box_right_top {
+            width: 100%;
+            height: 120px;
+            border: 2px solid violet;
+        }
+        #middle_box_right_bottom {
+            width: 100%;
+            height: 3130px;
+            border: 2px solid red;
+        }
+        /* #middle_box_right_buttom > div {
+            padding: 1%;
+            display: grid;
+            grid-template-columns: 24% 24% 24% 24%;
+            grid-template-rows: 600px 600px 600px 600px 600px;
+            gap: 1%;
+        } */
+        #products {
+            padding-left: 2%;
+            display: grid;
+            grid-template-columns: 24% 24% 24% 24%;
+            grid-template-rows: 600px 600px 600px 600px 600px;
+            gap: 1%;
+        }
+        img {
+            width: 100%;
+        }
+        #middle_box_right_bottom > div > div {
+            border: 2px solid #63fc3d;
+        }
+        .middle_box_right_top_head {
+            padding-left: 2%;
+            padding-top: 1%;
+            width: 65%;
+            height: 100px;
+            display: inline-block;
+            vertical-align: top;
+            border: 1px solid black;
+        }
+        .middle_box_right_top_bottom {
+            width: 25%;
+            height: 110px;
+            display: inline-block;
+            vertical-align: top;
+            border: 1px solid cyan;
+        }
+        #middle_box_bottom {
+            margin-left: 22%;
+            width: 70%;
+            height: 50px;
+            border: 2px solid green;
+        }
+        .middle_box_bottom_text {
+            text-align: center;
+            padding-top: 1%;
+        }
+        #bottom_box {
+            background-color: #f9f9f9;
+            padding-left: 2%;
+            padding-top: 2%;
+            width: 98%;
+            height: 420px;
+            border: 2px solid blue;
+            display: grid;
+            gap: 3%;
+            grid-template-columns: 16% 17% 17% 16% 16%;
+            grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+        }
+        #bottom_box > div {
+            border: 1px solid fuchsia;
+        }
+        .button_add_to_cart {
+            padding-left: 70%;
+            padding-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+        <div id="top_box1">
+            <div class="text_size">
+                <strong>Shipping outside of the U.S. or Canada?</strong>&nbsp<u>Learn About International Shipping</u>
+            </div>
+            <!-- <div class=".india">
+                India
+            </div> -->
+        </div>
+
+        <div id="top_box2">
+                <div class="left_top_box2">NORDSTORM</div>
+        </div>
+
+        <div id="middle_box">
+
+            <div id="middle_box_left">
+                <hr>
+                <div>
+                    <div class="middle_box_left_text">Brand</div>
+                    <div class="middle_box_left_symbol">+</div>
+                </div>
+                <hr>
+                <div>
+                    <div class="middle_box_left_text">Color</div>
+                    <div class="middle_box_left_symbol">+</div>
+                </div>
+                <hr>
+                <div>
+                    <div class="middle_box_left_text">Feature</div>
+                    <div class="middle_box_left_symbol">+</div>
+                </div>
+                <hr>
+                <div>
+                    <div class="middle_box_left_text">Gender</div>
+                    <div class="middle_box_left_symbol">+</div>
+                </div>
+                <hr>
+                <div>
+                    <div class="middle_box_left_text">Material</div>
+                    <div class="middle_box_left_symbol">+</div>
+                </div>
+                <hr>
+                <div>
+                    <div class="middle_box_left_text">Price</div>
+                    <div class="middle_box_left_symbol">+</div>
+                </div>
+                <hr>
+                <div>
+                    <div class="middle_box_left_text">Product Type</div>
+                    <div class="middle_box_left_symbol">+</div>
+                </div>
+                <hr>
+                <div>
+                    <div class="middle_box_left_text">Sale</div>
+                    <div class="middle_box_left_symbol">+</div>
+                </div>
+                <hr>
+                <div>
+                    <div class="middle_box_left_text">Size</div>
+                    <div class="middle_box_left_symbol">+</div>
+                </div>
+                <hr>
+                <div>
+                    <div class="middle_box_left_text">Style</div>
+                    <div class="middle_box_left_symbol">+</div>
+                </div>
+                <hr>
+                <div>
+                    <div class="middle_box_left_text">More to Explore</div>
+                    <div class="middle_box_left_symbol">+</div>
+                </div>
+                <hr>
+            </div>
+
+            <div id="middle_box_right">
+                
+                <div id="middle_box_right_top">
+                    <div class="middle_box_right_top_head">
+                        <h3>Men's Coats & Jackets</h3>
+                        <p>1671 items</p>
+                    </div>
+                    <div class="middle_box_right_top_bottom">
+                        <div class="button_add_to_cart"><a href="cart.html"><button>Go to Cart</button></a></div>
+                    </div>
+                </div>
+
+                <div id="middle_box_right_bottom">
+                    <div id="products"></div>
+                        <!-- <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div> -->
+                    </div>
+                </div>
+
+                <div id="middle_box_bottom">
+                    <div class="middle_box_bottom_text">1 &nbsp&nbsp&nbsp&nbsp 2 &nbsp&nbsp&nbsp&nbsp 3 &nbsp&nbsp&nbsp&nbsp 4 &nbsp&nbsp&nbsp ... &nbsp&nbsp&nbsp 24</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <diV id="bottom_box">
+            <div><strong>Customer Service</strong></div>
+            <div><strong>About Us</strong></div>
+            <div><strong>Stores & Services</strong></div>
+            <div><strong>Nordstrom Card & Rewards</strong></div>
+            <div><strong>Nordstrom, Inc.</strong></div>
+
+            <div>Contact Us</div>
+            <div>Careers</div>
+            <div>Find a Store </div>
+            <div>The Nordy Club Rewards</div>
+            <div>Nordstrom Rack</div>
+
+            <div>Order Status</div>
+            <div>Corporate Social Responsibility</div>
+            <div>Free Style Help</div>
+            <div>Pay My Bill</div>
+            <div>Nordstrom Canada</div>
+
+            <div>Shipping</div>
+            <div>Diversity, Inclusion & Belonging</div>
+            <div>Alterations & Tailoring</div>
+            <div>Manage My Nordstrom Card</div>
+            <div>Trunk Club</div>
+            
+            <div>Return Policy & Exchanges</div>
+            <div>Investor Relations</div>
+            <div>Trunk Club</div>
+            <div></div>
+            <div></div>
+
+            <div>Price Adjustments</div>
+            <div>Press Releases</div>
+            <div>Pop-In Shop</div>
+            <div></div>
+            <div></div>
+
+            <div>Gift Cards</div>
+            <div>Get Email Updates</div>
+            <div>Virtual Events</div>
+            <div></div>
+            <div></div>
+
+            <div>FAQ</div>
+            <div>Nordstrom Blog</div>
+            <div>Spa Nordstrom</div>
+            <div></div>
+            <div></div>
+
+            <div>Product Recalls</div>
+            <div></div>
+            <div>Nordstrom Restaurants</div>
+            <div></div>
+            <div></div>
+
+            <div>India</div>
+            <div></div>
+            <div>Nordstrom Local</div>
+            <div></div>
+            <div></div>
+            
+        </diV>
+        
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+
+let data = [
+    {
+      name: "Nordstrom Tech-Smart Trim Fit Sport Coat",
+      rating: "4.8",
+      currency: "INR",
+      price: "45700",
+      img: "https://n.io.nordstrommedia.com/id/sr3/dc00121d-48a1-40ea-9367-a892602103fa.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Peter Millar Plaid Wool Sport Coat",
+      rating: "4.6",
+      currency: "INR",
+      price: "33300",
+      img: "https://n.io.nordstrommedia.com/id/sr3/6815f686-069e-48c5-9176-43a3b7184996.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "River Island Relaxed Blazer",
+      rating: "3.9",
+      currency: "INR",
+      price: "31100",
+      img: "https://n.io.nordstrommedia.com/id/sr3/443375e4-e436-4343-ad9c-d5321feca76c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Liverpool Herringbone Travel Sport Coat",
+      rating: "4.4",
+      currency: "INR",
+      price: "36200",
+      img: "https://n.io.nordstrommedia.com/id/sr3/6d326a04-af61-4a58-af20-3b050d2fdcaf.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Levi's Skate Hunters Jacket",
+      rating: "4.8",
+      currency: "INR",
+      price: "48100",
+      img: "https://n.io.nordstrommedia.com/id/sr3/d0aca8b6-98af-4e53-8f69-0a7fc3637a37.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Suitsupply Wool Sport Coat",
+      rating: "3.7",
+      currency: "INR",
+      price: "34400",
+      img: "https://n.io.nordstrommedia.com/id/sr3/6e323c3c-d49d-45c5-ad5a-14bf98aeadc8.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    
+    {
+      name: "BOSS Haylon Classic Fit Sport Coat",
+      rating: "3.6",
+      currency: "INR",
+      price: "31800",
+      img: "https://n.io.nordstrommedia.com/id/sr3/3abc2852-d12e-42d9-b931-3f4ae37202ba.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Eleventy Slim Fit Jersey Sport Coat",
+      rating: "3.8",
+      currency: "INR",
+      price: "32700",
+      img: "https://n.io.nordstrommedia.com/id/sr3/1f8b07b9-46ff-42d7-b6b9-0b1c73ec0a82.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Nordstrom Trim Fit Sport Coat",
+      rating: "4.5",
+      currency: "INR",
+      price: "47600",
+      img: "https://n.io.nordstrommedia.com/id/sr3/c085b6a4-bd7a-4775-8fc9-d3372014fe48.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "BOSS Hartlay Plaid Wool Sport Coat",
+      rating: "3.3",
+      currency: "INR",
+      price: "33500",
+      img: "https://n.io.nordstrommedia.com/id/sr3/5c1cf802-361a-411c-85fe-d47a8e15990a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Bugatchi Men's Stripe Sport Coat",
+      rating: "4.2",
+      currency: "INR",
+      price: "33800",
+      img: "https://n.io.nordstrommedia.com/id/sr3/b0f95d4d-02f7-40a8-8bc7-8ea585184248.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "River Island Slim Fit Suit Jacket",
+      rating: "3.2",
+      currency: "INR",
+      price: "32200",
+      img: "https://n.io.nordstrommedia.com/id/sr3/467b6b32-5741-4afd-97f5-c6e56c6b0f7f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Brunello Cucinelli Denim Jacket",
+      rating: "3.4",
+      currency: "INR",
+      price: "24800",
+      img: "https://n.io.nordstrommedia.com/id/sr3/bd67e595-15a7-4f9d-b08c-b81a9439a55e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Levi's Half-All Trucker Jacket",
+      rating: "4.6",
+      currency: "INR",
+      price: "47700",
+      img: "https://n.io.nordstrommedia.com/id/sr3/3a343c3a-726f-45f8-a70c-d3f3799ee346.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Dart Denim Jacket",
+      rating: "4.1",
+      currency: "INR",
+      price: "35000",
+      img: "https://n.io.nordstrommedia.com/id/sr3/98dc97d0-d8b3-4eeb-9f22-6703507c0d01.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Luke Mother Trucker Denim Jacket",
+      rating: "4.7",
+      currency: "INR",
+      price: "35100",
+      img: "https://n.io.nordstrommedia.com/id/sr3/6fc2fcdc-ded6-446b-b408-8f62dc4d8d7f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Peter Millar Flynn Classic Fit Check Wool Sport Coat",
+      rating: "4.2",
+      currency: "INR",
+      price: "34700",
+      img: "https://n.io.nordstrommedia.com/id/sr3/de1c5104-a1f9-4bfd-b761-e5d4a24fcf96.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Rodd & Gunn Portland Spray Classic Fit Windowpane Wool Blend Sport Coat",
+      rating: "3.8",
+      currency: "INR",
+      price: "32700",
+      img: "https://n.io.nordstrommedia.com/id/sr3/418eade1-dac4-4ba2-8ddc-b98216ddf2e0.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "Jack Victor Midland Windowpane Wool Sport Coat",
+      rating: "4.6",
+      currency: "INR",
+      price: "36500",
+      img: "https://n.io.nordstrommedia.com/id/sr3/34de2d63-3c2a-44ae-984c-3f73dc35a891.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+    {
+      name: "BOSS Huge Slim Fit Microcheck Wool Blazer",
+      rating: "4.8",
+      currency: "INR",
+      price: "41500",
+      img: "https://n.io.nordstrommedia.com/id/sr3/fd7ad883-3262-4c6e-9f83-fd64f6c46573.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+    },
+];
+
+let parent = document.getElementById('products');
+
+if (localStorage.getItem("cart") === null) {
+        localStorage.setItem("cart", JSON.stringify([]));
+    }
+function showProducts() {
+        data.forEach(function (product){
+
+          let div = document.createElement("div");
+      
+          let img = document.createElement("img");
+
+          img.src = product.img;
+
+          let product_currency = document.createElement("p");
+          product_currency.textContent = product.currency;
+
+          let product_price = document.createElement("p");
+          product_price.textContent = product.currency + " " + product.price;
+
+          let product_name = document.createElement("p");
+          product_name.textContent = product.name;
+
+          let addtocart_btn = document.createElement("button");
+
+          addtocart_btn.innerText = "Add to Cart";
+
+          addtocart_btn.onclick = function() {
+              addtoCart(product);
+          };
+
+          div.append(img, product_name, product_price, addtocart_btn);
+
+          parent.append(div);
+        });
+
+    }
+
+    showProducts();
+
+
+
+    function addtoCart(p) {
+        let products_cart = JSON.parse(localStorage.getItem("cart"));
+
+        products_cart.push(p);
+
+        localStorage.setItem("cart", JSON.stringify(products_cart));
+
+        console.log("products_cart:", products_cart);
+
+    }
+
+</script>

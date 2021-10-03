@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+
+            margin:1%;
+            padding:0; 
+        }
+        .shopping_bag{
+         height:25px;
+         float:right;
+         margin-top: 1%;
+     }
+     .nordStorm{
+display: inline-block;
+     }
+    
+        #container {
+            max-width: 1200px;
+          
+        }
+        #box1{
+            border-top: 1px solid;
+        }
+        #box2{
+            display: flex;
+            border-bottom: 1px solid;
+        }
+        .Delivery{
+            margin-bottom:-2%
+          
+        }
+        #DLv{
+               border-top: 1px solid; 
+            }
+        .box2_div1, .box2_div2{
+            flex-basis: 45%;
+            margin-left:2%;
+          
+        }
+        #payment{
+            border-bottom: 1px dashed;
+        }
+        #credit{
+            width:50%;
+        }
+        #Place_Order{
+            width:30%;
+           margin-left:30%;
+           height:30px;
+           background-color:black;
+           color:white
+        }
+        .receipt{
+            text-align:center;
+        }
+      #last_div{
+          border-bottom: 1px solid;
+      }
+      .description{
+          text-align:center;
+      }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <nav>
+        <h3 class = "nordStorm" >NordStorm</h3>
+      
+            <img src="https://cdn-icons-png.flaticon.com/512/253/253298.png" alt="" class="shopping_bag">
+     
+    </nav>
+  
+    
+          
+           <div id="box1">
+               <div class="checkout">
+                <i class="fas fa-lock"></i>
+                <h3>Secure checkout <sub>powered by Borderfree</sub> </h3>
+                <p class="descrip">Already have a Borderfree account? Click here. ?</p>
+
+               </div>
+
+          </div>
+        
+              <div id="DLv">
+              <p class = "Delivery"><Span>1 </Span> Delivery  (Change)</p><br>
+            </div>
+              <div id="box2">
+              <div class="box2_div1">
+                  <h5 class="delivery_addresses">Delivery addresses:</h5>
+                  <p class="name">Rohit Baghel</p>
+                  <P class="street">Nangloi</P>
+                  <P class="full_address">Nangloi,Delhi-110041</P>
+                  <p class="country">India</p>
+
+              </div>
+              <div class="box2_div2">
+                <h5 class="delivery_method">Delivery Method:</h5>
+                <p class="standard">STANDARD</p>
+                <p class="import">NO ADDITIONAL IMPORT CHARGES</p>
+                <p class="delivery">AT DELIVERY</p>
+                <p class="bussiness_days">11–21 BUSINESS DAYS</p>
+              </div>
+          </div>
+          <div id="payment">
+            <p class = "payment"><Span>2 </Span> Payment</p>
+          
+            <input type="checkbox"> <span>My billing address is the same as my delivery address</span></br>
+          <div id="cardholder">
+              <input type="radio" > <span>Credit or Debit Card</span></br>
+              <input type="number" name="credit" placeholder="Card Number" id = "credit" ></br>
+              <input type="number" name="expiry" placeholder="MM / YY" id = "expiry" >
+              <input type="number" name="Security" placeholder="Security Code" id = "security" >
+
+          </div>
+          </div>
+        <div id="last_div">
+            <input type="checkbox"> <span>Send me electronic or mail offers from Borderfree. You may opt out at any time.</span></br>
+            <input type="checkbox"> <span>Send me electronic or mail offers from Nordstrom. You may opt out at any time.</span></br>
+            <button  onclick="placeholder()" id = "Place_Order">Place Order >></button>
+            <p class="receipt">This order total is 100% guaranteed. There will be no additional charges due upon receipt.</p>
+        </div>
+        <div class="description">
+            <p class="description">By placing your order, you agree to the Terms & Conditions and Privacy Policy of Borderfree from Pitney Bowes, Nordstrom’s international fulfillment service. Borderfree is an online merchant that is located at 27 Waterview Drive, Shelton, CT, 06484, US.</p>
+        </div>
+    </div> 
+</body>
+</html>
+<script>
+    function placeholder(){
+        alert("Your Order Successfully Placed");
+    }
+
+</script>

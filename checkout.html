@@ -4,229 +4,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="checkout.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Checkout International | Nordstorm</title>
     <style>
-        #container {
-            max-width: 1200px;
-            border: 1px solid black;
-            margin:auto;
-            display:flex;
-        }
-       #box1{
-           flex-basis: 68%;
-          
-        margin-left: 1%;
-       }
-      
-    .email,.address{
-        width: 98%;
-    }
-    .firstname,.lastname,.address2,.PostalCode,.city,.region,.phone{
-        width: 47.75%;
-
-    }
-    #india{
-        width: 47.75%;
-    }
-    table{
-        background: #FFFFFF
-    }
-    .continue{
-        background: #000;
-        color: #FFFFFF;                                                                     
-        padding-left: 15%;
-        padding-right: 15%;
-        margin-left: 30%;
-        margin-top: 1%;
-    }
-    #box2{
-        
-           flex-basis: 28%;
-           margin-left: 2%;
-           background:#F4F4F4;
-       }
-     .continue2{
-        background: #000;
-        color: #FFFFFF;
-        width: 100%;
-     }  
-     .total_amount{
-         display: flex;
-         justify-content: space-between;
-     }
-     .promo{
-         border-bottom: 1px solid  #000;
-         border-top: 1px solid black;
-         color:#82C3DD ;
-     }
-     th{
-     border: 1px solid black;
-     }
-     .shopping_bag{
-         height:25px;
-         float:right;
-         margin-top: 1%;
-     }
-     .nordStorm{
-display: inline-block;
-     }
-     nav{
-         border : 1px solid black;
-     }
-      
-          
-      
-      table{
-          width : 100%;
-      }
-      #payment2{
-          margin :1%;
-        
-      }
-
-      .num2{
-          float: left;
-          border : 2px solid black;
-          margin-right: 1%;
-          border-radius: 50%;
-          
-      }
-      .payment_name{
-float : left;
-border-top: 1px solid black;
-
-      }
-      .div_cart{
-        
-        border: 1px solid black;
-      }
-      .product_img{
-  width: 40%;
-  
+      img{
+        height:150px;
+        /* width:100% */
       }
     </style>
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <h3 class = "nordStorm" >NordStorm</h3>
       
             <img src="https://cdn-icons-png.flaticon.com/512/253/253298.png" alt="" class="shopping_bag">
      
-    </nav>
-   <div id="container">
-    
-          
-           <div id="box1">
-               <div class="checkout">
-                <i class="fas fa-lock"></i>
-                <h3>Secure checkout <sub>powered by Borderfree</sub> </h3>
-                <p class="descrip">Already have a Borderfree account? Click here. ?</p>
-
-               </div>
-               <div class="form">
-                   <span>1</span>
-                 <span>Delivery</span>
-                 <form >
-                     <input type="email" placeholder ="Email" class="email"></br>
-                     <input type="text" placeholder ="First Name" class="firstname" >
-                     <input type="text" placeholder ="Last Name" class="lastname"></br>
-                     <input type="text " placeholder ="Address" class="address"></br>
-                     <input type="text" placeholder ="address2(Optional)" class="address2">
-                     <input type="text" placeholder =" PostalCode" class="PostalCode"></br>
-                     <input type="text" placeholder ="City" class="city" >
-                     <input type="text" placeholder ="Region" class="region"></br>
-                     <input type="number" placeholder ="Phone" class="phone" >
-                    <span class= "country_select">
-                        <select name="location" id="india">
-                            <option value="india" >India</option>
-                            <option value="Usa" >USA</option>
-                            <option value="United_Kindom" >United_Kindom</option>
-                            <option value="Russia" >Russia</option>
-                            <option value="Germany" >Germany</option>
-                            <option value="Scotland" >Scotland</option>
-                        </select>
-                    </span>
-                    </form>
-                    <div class="table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Delivery Method</th>
-                                    <th>Estimated Arrival</th>
-                                    <th>Shipping Cost</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>	
-                                        Standard </br>
-                                        No additional import charges at delivery</td>
-                                     <td>11–21 business days</td>
-                                     <td>(INR) ₹2,469</td>
-                                       
-                                </tr>
-                                <tr>
-                                   <td>Standard</br>
-                                    Import charges collected upon deliver</td>
-                                   <td>11–21 business days</td>
-                                   <td>(INR) ₹2,469</td>
-                                </tr>
-                                <tr>
-                                    <td>Express</br>
-                                        No additional import charges at delivery</td>
-                                   <td>11–16 business days</td>
-                                   <td>(INR) ₹2,734</td>
-                                </tr>
-                                <tr>
-                                    <td>Express</br>
-                                        Import charges collected upon delivery</td>
-                                    <td>11–16 business days</td>
-                                    <td>(INR) ₹2,734</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a href="payment.html"> <button class = "continue">Continue</button></a>
-                    </div>
-
-                  
-               </div>
-               <p class="num2">2</p>
-               <p class="payment_name">Payment</p><br>
-               <div id="payment2">
-              
-           <p>By placing your order, you agree to the Terms & Conditions and Privacy Policy of Borderfree from Pitney Bowes, Nordstrom’s international fulfillment service. Borderfree is an online merchant that is located at 27 Waterview Drive, Shelton, CT, 06484, US.</p>
-                </div>
-           </div>
-           <div id="box2">
-               <span class = "cart_icon"></span>
-               <h4>Your Order</h4>
-               <a href="payment.html"><button class = "continue2">Continue</button></a>
-               <div class="total_amount">
-               <div class="items">
-                   <p class="p_items">Items</p>
-                   <p class="p_items">shipping</p>
-                   <p class="p_items">Duties & Taxes</p>
-                   <p class="p_Total">Total</p>
-               </div>
-               <div class="price">
-                  <p id="p_items"></p>
-                  <p id="p_shipping"></p>
-                  <p id="p_taxes"></p>
-                  <p id="p_total"></p>
-               </div>
-            </div>
-
-               <form action="" onsubmit="promo_code(event)">
-                 <input type="text" id="promo" placeholder="promo code">
-                 <input type="submit">
-               </form>
-               <div id="cart"></div>
-           </div>
+    </nav> -->
+   <div class="container-fluid border border-dark">
+    <div class="row">
+      <div class="col-6">
+      <form class="row g-3">
+        <div class="col-12">
          
+          <input type="text" class="form-control" id="email" placeholder="Your email@email.com">
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="firstname" placeholder="First name">
+        </div>
+        <div class="col-md-6">
+        
+          <input type="text" class="form-control" id="lastname" placeholder="Last name">
+        </div>
+        <div class="col-12">
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+        
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor(Optional)">
+        </div>
+        <div class="col-md-6">
+        
+          <input type="text" class="form-control" id="phonenumber" placeholder="Phone ">
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="region" placeholder="Region">
+        </div>
+       
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="inputCity" placeholder="City">
+        </div>
+        <div class="col-md-4">
+        
+          <select id="inputcountry" class="form-select">
+            <option selected>Country</option>
+            <option value="india" >India</option>
+            <option value="Usa" >USA</option>
+            <option value="United_Kindom" >United_Kindom</option>
+            <option value="Russia" >Russia</option>
+            <option value="Germany" >Germany</option>
+            <option value="Scotland" >Scotland</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" id="inputZip" placeholder="Zip Code">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+       
+      </form>
+       <!-- delivery,etimated, shipping -->
+       <div class="row">
+        <table class="table">
+          <thead>
+            <tr>
+
+              <th scope="col">Delivery Method</th>
+              <th scope="col">Estimated Arrival</th>
+              <th scope="col">Shipping Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>	
+                Standard </br>
+                No additional import charges at delivery</td>
+             <td>11–21 business days</td>
+             <td>(INR) ₹2,469</td>
+            </tr>
+            <tr>
+              <td>Standard</br>
+                Import charges collected upon deliver</td>
+               <td>11–21 business days</td>
+               <td>(INR) ₹2,469</td>
+             
+            </tr>
+            <tr>
+              <td>Express</br>
+                No additional import charges at delivery</td>
+           <td>11–16 business days</td>
+           <td>(INR) ₹2,734</td>
+             
+            </tr>
+            <tr>
+              <td>Express</br>
+                No additional import charges at delivery</td>
+           <td>11–16 business days</td>
+           <td>(INR) ₹2,734</td>
+             
+            </tr>
+          </tbody>
+        </table>
+       </div>
+       <div class="col-12 border">
+        <button type="button" class="btn btn-outline-dark" style="width: 100%;" onclick="addressconfig()">Continue</button>
+       </div>
+       <!-- payment term and condition -->
+       <div class="col-12">
+         <div class="col-12">
+           <p>2.Payment <br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; By placing your order, you agree to the Terms & Conditions and Privacy Policy of Borderfree from Pitney Bowes, Nordstrom’s international fulfillment service. Borderfree is an online merchant that is located at 27 Waterview Drive, Shelton, CT, 06484, US.
+          </p>
+           
+         </div>
+         
+       </div>
+      </div>
+      <!-- coupon bar -->
+      <div class="col-6" >
+        <div id="box2" class= "col-12" >
+          <span class = "cart_icon"></span>
+          <h4>Your Order</h4>
+          <div class="col-12 border">
+            <button type="button" class="btn btn-outline-dark continue2" style="width: 100%;">Continue</button>
+          <div class="row">
+          <div class="col-6 border">
+              <p class="p_items">Items</p>
+              <p class="p_items">shipping</p>
+              <p class="p_items">Duties & Taxes</p>
+              <p class="p_Total">Total</p>
+          </div>
+          <div class="col-6">
+             <p id="p_items"></p>
+             <p id="p_shipping"></p>
+             <p id="p_taxes"></p>
+             <p id="p_total"></p>
+          </div>
+       </div>
+
+          <form action="" onsubmit="promo_code(event)">
+            <input type="text" id="promo" placeholder="promo code">
+            <input type="submit"  class="btn btn-outline-dark">
+          </form>
+          <div id="cart" class="row"></div>
+      </div> 
+      </div>
+     
+      <!-- main row div -->
+      
     </div>
+        <!-- container fluid div -->
+        
+          </div>
+          
+    </div>
+
 </body>
 </html>
 <script>
+  
     let data = [
     {
       name: "Nordstrom Tech-Smart Trim Fit Sport Coat",
@@ -417,27 +368,93 @@ function promo_code(e){
 
     function ShowProducts(){
 var cart = document.getElementById("cart")
-let div_cart = document.createElement("div");
-div_cart.setAttribute("class", "div_cart")
-var div_description = document.createElement("div");
+// let div_cart = document.createElement("div");
+// div_cart.setAttribute("class", "col-12  border")
+// var div_description = document.createElement("div");
 
 
-cart.append(div_cart)
+
 // console.log(cart)
-product_cart.forEach(function(product){
+product_cart.forEach(function(product,index){
 // console.log(product
+
+// button plus and delete
+let plus_delete =document.createElement("div")
+plus_delete.setAttribute("class" ,"row")
+let delete_div = document.createElement("div")
+delete_div.setAttribute("class" ,"col-3")
+
+let delete_btn = document.createElement("button")
+delete_btn.innerText= "Delete"
+delete_div.append(delete_btn)
+delete_btn.addEventListener("click",function(){
+  deletItem(index);
+})
+
+let plus_div = document.createElement("div")
+plus_div.setAttribute("class" ,"col-3")
+let plus_btn = document.createElement("button")
+
+plus_div.append(plus_btn)
+plus_btn.innerText= "+"
+plus_btn.addEventListener("click",function(){
+  console.log(plus_btn)
+  pushInCart(index);
+
+})
+plus_delete.append(delete_div,plus_div)
+// button plus and delete
+
+let div_cart = document.createElement("div");
+div_cart.setAttribute("class", "col-12 col-sm-6 col-md-4  border")
+var div_description = document.createElement("div");
+cart.append(div_cart)
 let name = document.createElement("p");
-name.textContent = product.name;
+name.textContent = "Product Name: "+product.name;
 // console.log(name);
 let price = document.createElement("p");
-price.textContent = product.price
+price.textContent = "Product Price: "+'₹'+product.price
 let img = document.createElement("img");
 img.setAttribute("class","product_img")
 img.src = product.img
-div_cart.append(img,name,price)
+div_cart.append(img,name,price,plus_delete)
 
 })
     }
 ShowProducts()
+
+function addressconfig(){
+  var email=document.getElementById("email")
+     var firstname=document.getElementById("firstname")
+     var lastname=document.getElementById("lastname")
+     var inputAddress=document.getElementById("inputAddress")
+     var inputAddress2=document.getElementById("inputAddress2")
+     var phonenumber=document.getElementById("phonenumber")
+     var inputCity=document.getElementById("inputCity")
+     var inputZip=document.getElementById("inputZip")
+     if(email.value==""||firstname.value==""||lastname.value==""||inputAddress.value==""||phonenumber.value==""||inputZip.value==""){
+             alert("Address field can not be empty")
+          
+         }
+         else if(inputZip.value.length!==6){
+            alert("Incorrect Area Code")
+        }
+        else if(phonenumber.value.length!==10){
+            alert("Invalid Mobile Number")
+        }else{
+          window.location.href="../Frontend/payment copy.html"
+        }
+}
+
+function pushInCart(index){
+  product_cart.push(product_cart[index])
+         localStorage.setItem("cart",JSON.stringify(product_cart))
+         ShowProducts(product_cart)
+     }
+     function deletItem(index) {
+        product_cart.splice(index, 1);
+        localStorage.setItem("cart",JSON.stringify(product_cart))
+        ShowProducts(product_cart)
+     }
 
 </script>

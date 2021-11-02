@@ -53,6 +53,9 @@
     #navigationbar > p:hover {
        text-decoration: 2px underline black ;
     }
+    #navigationbar > a > p:hover {
+       text-decoration: 2px underline black ;
+    }
     
     #navigationbar :nth-child(13){
         margin-left: 90px;
@@ -300,12 +303,13 @@
         background-color: white;
         text-align: center;
         font-size: 25px;
-        font-family:monospace
+        font-family:sans-serif
     }
     #helpboxe > img {
         width: 99%;
         height: 150px
     }
+    
     #bottom_box_main {
             /* border: 2px solid teal; */
             width: 100%;
@@ -342,6 +346,7 @@
             display: inline-block;
         }
 
+
 </style>
 <body>
     <div id="headingbar">
@@ -349,8 +354,8 @@
     </div>
     <div id="navigationbar">
         <h4 >NORDSTROM</h4>
-        <P onclick="">Sale</P>
-        <P>Women</P>
+        <P>Sale</P>
+        <a style="color:rgb(121,80,80); margin-top: 7px; margin-left: 10px;text-decoration: underline white;" href="products.html"><P style="font-size: 17px; ">Men</P></a>
         <P>Kids</P>
         <P>YoungAdult</P>
         <P>Activewear</P>
@@ -359,13 +364,11 @@
         <P>Beauty</P>
         <P>Designer</P>
         <P>Brands</P>
-        <P>Sale</P>
-        <a href="signin.html"><button style="background-color: whitesmoke; border-radius: 8px;">SignIn</button></a>
-        <a href="signup.html"><button style="background-color:whitesmoke; border-radius: 8px;">SignUp</button></a>
-        <img src="data:image/png;base64,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" alt="">
+       
     </div>
+    
     <div id="tagline">Make it Yours with Faster, Easier Shopping.</div>
-    <div id="createaccountbox"><a href="signup.html"> Sign in or Create an Account </a>
+    
         </div>
     <div id="bckgimg">
         <h3>Yoga, Run, Repeat</h3>
@@ -389,25 +392,25 @@
             <img src="https://n.nordstrommedia.com/id/sr3/27527bfb-e495-4276-a2a5-3126adeb3e86.jpeg?h=200&w=200&dpr=2" alt="">
            <div>New!</div>
            <div>Topman Tonal Cotton Zip Polo</div>
-           <p>INR 2,600/- <button>Add to Cart</button></p>
+           <p>INR 2,600/- <button style="background-color: aquamarine; border-radius: 20px;">Add to Cart</button></p>
         </div>
         <div>
             <img src="https://n.nordstrommedia.com/id/sr3/2411e43a-48c5-49e6-aaab-77c4016f7f3d.jpeg?h=200&w=200&dpr=2" alt="">
             <div>New!</div>
             <div>Travis Mathew The Zina Polo</div>
-            <p>INR 2,900/- <button>Add to Cart</button></p>
+            <p>INR 2,900/- <button style="background-color: aquamarine; border-radius: 20px;">Add to Cart</button></p>
         </div>
         <div>
             <img src="https://n.nordstrommedia.com/id/sr3/9f77259a-658c-4ccb-8296-e04d3317c129.jpeg?h=200&w=200&dpr=2" alt="">
             <div></div>
             <div>Nordstrom Techie Smart que</div>
-            <p>INR 1,200/- <button>Add to Cart</button></p>
+            <p>INR 1,200/- <button style="background-color: aquamarine; border-radius: 20px;">Add to Cart</button></p>
         </div>
         <div>
             <img src="https://n.nordstrommedia.com/id/sr3/213d54f9-ec2b-4eaf-97c8-968cce171dff.jpeg?h=200&w=200&dpr=2" alt="">
             <div>New!</div>
             <div>River Island Slim Fit</div>
-            <p>INR 3,100/- <button>Add to Cart</button></p>
+            <p>INR 3,100/- <button style="background-color: aquamarine; border-radius: 20px;">Add to Cart</button></p>
         </div>
     </div>
     <div id="homeproducts2">
@@ -415,25 +418,25 @@
             <img src="https://n.nordstrommedia.com/id/sr3/4dabc2b5-2794-4167-93ac-f7b47e7a11ec.jpeg?h=200&w=200&dpr=2" alt="">
             <div></div>
             <div>Vouri Tech Polo</div>
-            <p>INR 2,200/- <button>Add to Cart</button></p>
+            <p>INR 2,200/- <button style="background-color: aquamarine; border-radius: 20px;">Add to Cart</button></p>
         </div>
         <div>
             <img src="https://n.nordstrommedia.com/id/sr3/4b20c698-de60-4b72-8942-a639c1c39313.jpeg?h=200&w=200&dpr=2" alt="">
             <div>New!</div>
             <div>Zella Performance Polo</div>
-            <p>INR 2,300/- <button>Add to Cart</button></p>
+            <p>INR 2,300/- <button style="background-color: aquamarine; border-radius: 20px;">Add to Cart</button></p>
         </div>
         <div>
             <img src="https://n.nordstrommedia.com/id/sr3/e6197731-ca3a-43b6-ac0a-3ae47010eb21.jpeg?h=200&w=200&dpr=2" alt="">
             <div>New!</div>
             <div>Rhone Reign Performace Pollo</div>
-            <p>INR 2,500/- <button>Add to Cart</button></p>
+            <p>INR 2,500/- <button style="background-color: aquamarine; border-radius: 20px;">Add to Cart</button></p>
         </div>
         <div>
             <img src="https://n.nordstrommedia.com/id/sr3/b5317895-3c89-495b-9ca5-23510d32d9e0.jpeg?h=200&w=200&dpr=2" alt="">
             <div></div>
             <div>Oakely Club House</div>
-            <p>INR 1,900/- <button>Add to Cart</button></p></div>
+            <p>INR 1,900/- <button style="background-color: aquamarine; border-radius: 20px;">Add to Cart</button></p></div>
     </div>
     <div id="tagline3">
         <h2>Celebrating Latinx Heritage Month</h2>
@@ -490,6 +493,8 @@
         <li>Track the Order,Make a Return,Price Adjustment</li>
         <img src="https://n.nordstrommedia.com/id/92561708-7046-45f1-a4e3-326b285d2080.jpeg?h=201&w=1208" alt="">
     </div>
+
+    <hr style="border: 1px solid black;">
     <div id="bottom_box_main">
         <diV id="bottom_box">
             <div id="bottom_box_head">Customer Service</div>
@@ -497,7 +502,7 @@
             <div id="bottom_box_head">Stores & Services</div>
             <div id="bottom_box_head">Nordstrom Card & Rewards</div>
             <div id="bottom_box_head">Nordstrom, Inc.</div>
-            <div>Get our apps</div>
+            
     
             <div>Contact Us</div>
             <div>Careers</div>

@@ -1,9 +1,9 @@
 # Project_NordStorm
 This project is about copying the famous luxury brand site NordStorm.com,
-# <a href="">Pull-Bear</a>
+# <a href="">NordStorm</a>
 <h2>About Project</h2>
 <p>
-    This Project has been assigned to us during our construct week in 2nd unit at masai school. The Project is about to clone the Pull & Bear shopping site. "Pull & Bear" is a spanish brand, specializes in manufacturing and selling urban style clothing and accessories. The brand uses the US popular culture in its product design.
+    This Project has been assigned to us during our construct week in 2nd unit at masai school. The Project is about to clone the NordStorm shopping site. "NordStorm" is an American luxury department store chain, specializes in manufacturing and selling urban style clothing and accessories. The brand uses the US popular culture in its product design.
 </p>
 <h2>Technologies used in Project</h2>
 <p>

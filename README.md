@@ -35,6 +35,6 @@ And made product discription page , On description page you can select color and
 <ul>
     <li><a href="https://github.com/Rohitbaghel">Rohit Baghel</a></li>
     <li><a href="https://github.com/impcakash">Prakash</a></li>
-   */<li><a href="https://github.com/">Vaitla Mahesh Kumar</a></li>/*
+   <li><a href="https://github.com/">Vaitla Mahesh Kumar</a></li>
    
 </ul>

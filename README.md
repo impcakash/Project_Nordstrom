@@ -23,7 +23,7 @@ This project is about copying the famous luxury brand site NordStorm.com,
 
 2- Vaitla Mahesh Kumar
 
-3-Prakash
+3- Prakash Chandra Akash
     
 we split our task between three of us. Mahesh designed the landing page along with signIn ans signUp function with all mandatory and necessary authentication for visiting   the Pull&Bear website,
 prakash has completed the navbar for all pages and designed the Men & Women section of the website along with payment page authentication.

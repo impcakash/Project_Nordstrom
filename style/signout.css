@@ -1,4 +1,6 @@
-
+*{
+    font-family: "Brandon Text", Arial, sans-serif;
+  }
     #headingbar {
         background-color: black;
         color: white;

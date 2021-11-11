@@ -264,7 +264,7 @@ function addressconfig(){
         else if(phonenumber.value.length!==10){
             alert("Invalid Mobile Number")
         }else{
-          window.location.href="../Frontend/payment copy.html"
+          window.location.href="../html/payment.html"
         }
 }
 

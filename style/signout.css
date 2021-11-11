@@ -14,7 +14,7 @@
         margin-top: 0px;
         padding-top: 7px;
         margin-bottom: 3px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Brandon Text", Arial, sans-serif;
     }
     #navigationbar {
         display: flex;
@@ -25,7 +25,7 @@
     #navigationbar > p {
         margin-left: 15px;
         margin-top: 25px;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family:"Brandon Text", Arial, sans-serif;
         font-weight: 200;
         color: rgb(121, 80, 80);
         margin-bottom: 0px;
@@ -36,7 +36,7 @@
         margin-left: 10px;
         margin-right: 40px;
         margin-top: 18px;
-        font-family:  "Gill Sans", sans-serif;
+        font-family:  "Brandon Text", Arial, sans-serif;
         color: black;
     }
     
@@ -59,7 +59,7 @@
         height: 30px;
         background-color: black;
         color: blanchedalmond;
-        font-family: monospace;
+        font-family: "Brandon Text", Arial, sans-serif;
         font-size: 20px;
     }
     input {
@@ -68,7 +68,7 @@
     }
     label {
         font-weight: 400;
-        font-family: monospace;
+        font-family: "Brandon Text", Arial, sans-serif;
         font-size: 18px;
         
     }
@@ -82,7 +82,7 @@
         text-align: center;
         margin-bottom: 20px;
         font-size: 20px;
-        font-family: fantasy;
+        font-family: "Brandon Text", Arial, sans-serif;
         
     }
     #bottom_box_main {
